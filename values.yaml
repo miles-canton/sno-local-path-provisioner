@@ -4,5 +4,4 @@ local-path-provisioner:
   storageClass:
     defaultClass: true
   sharedFileSystemPath: /opt/local-path-provisioner
-  nodePathMap: 
-    - ""
+  nodePathMap: [ ]
