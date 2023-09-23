@@ -1,7 +1,7 @@
 .PHONY: install uninstall
 
 install:
-	git submodule update --init
+	git submodule update --init --remote
 	@echo # Line break
 	helm dependency update
 	@echo # Line break
