@@ -2,6 +2,7 @@
 
 install:
 	git submodule update --init --remote
+	sed -i 's/WaitForFirstConsumer/Immediate/g' dependencies/local-path-provisioner/deploy/chart/local-path-provisioner/templates/storageclass.yaml
 	@echo # Line break
 	helm dependency update
 	@echo # Line break
